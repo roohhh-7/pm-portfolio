@@ -26,29 +26,40 @@
   });
 
   // Modal Logic
-  const modal = document.getElementById('case-study-modal');
+  const modals = document.querySelectorAll('.case-study-modal');
   const projectCards = document.querySelectorAll('#work .card');
   
   projectCards.forEach(card => {
     card.addEventListener('click', () => {
-      // In a real scenario, you'd populate modal contents here based on the card clicked.
-      // For now, we update the title and show the modal template.
-      const title = card.querySelector('.card-title').innerText;
-      document.getElementById('modal-title').innerText = title;
+      const modalId = card.getAttribute('data-modal');
+      if (!modalId) return;
       
-      modal.classList.add('active');
-      document.body.style.overflow = 'hidden'; // Prevent background scrolling
+      const modal = document.getElementById(modalId);
+      if (modal) {
+        // Update the title of the opened modal based on the clicked card
+        const title = card.querySelector('.card-title').innerText;
+        const modalTitleEl = modal.querySelector('.modal-title');
+        if (modalTitleEl) modalTitleEl.innerText = title;
+        
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden'; // Prevent background scrolling
+      }
     });
   });
 
-  window.closeModal = function() {
-    modal.classList.remove('active');
-    document.body.style.overflow = '';
+  window.closeModal = function(modalId) {
+    const modal = document.getElementById(modalId);
+    if (modal) {
+      modal.classList.remove('active');
+      document.body.style.overflow = '';
+    }
   }
 
   // Close when clicking outside content
-  modal.addEventListener('click', (e) => {
-    if (e.target === modal) {
-      closeModal();
-    }
+  modals.forEach(modal => {
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        window.closeModal(modal.id);
+      }
+    });
   });

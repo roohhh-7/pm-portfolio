@@ -14,7 +14,7 @@
 
 <!-- ── NAV ── -->
 <nav>
-  <a href="#hero" class="nav-logo">AB.</a>
+  <a href="#hero" class="nav-logo">Rohit</a>
   <ul class="nav-links">
     <li><a href="#hero">Home</a></li>
     <li><a href="#work">Work</a></li>
@@ -81,7 +81,7 @@
     <div class="bento-grid">
 
       <!-- Featured Card -->
-      <div class="card card-featured reveal">
+      <div class="card card-featured reveal" data-modal="case-study-modal-1">
         <div class="polaroid polaroid-bg-1">
           <img src="assets/project1.png" alt="Project 1" style="width:100%; height:100%; object-fit:cover; display:block;" />
           <span class="polaroid-label" style="position:absolute; top:10px; right:10px; z-index:10;">
@@ -101,7 +101,7 @@
       </div>
 
       <!-- Card 2 -->
-      <div class="card reveal" style="transition-delay:0.1s;">
+      <div class="card reveal" style="transition-delay:0.1s;" data-modal="case-study-modal-2">
         <div class="polaroid polaroid-bg-2">
           <img src="assets/project2.png" alt="Project 2" style="width:100%; height:100%; object-fit:cover; display:block;" />
         </div>
@@ -116,7 +116,7 @@
       </div>
 
       <!-- Card 3 -->
-      <div class="card reveal" style="transition-delay:0.2s;">
+      <div class="card reveal" style="transition-delay:0.2s;" data-modal="case-study-modal-3">
         <div class="polaroid polaroid-bg-3">
           <img src="assets/project3.png" alt="Project 3" style="width:100%; height:100%; object-fit:cover; display:block;" />
         </div>
@@ -282,19 +282,19 @@
         <p>Open to conversations about exciting product roles, collaborations, or just trading notes on PM craft. Drop me a line.</p>
         
         <div class="contact-links">
-          <a href="mailto:imluckybajaj@gmail.com" class="contact-link-card">
+          <a href="mailto:rohits03.std@gmail.com" class="contact-link-card">
             <div class="contact-link-icon">✉️</div>
             <div class="contact-link-info">
               <span class="contact-link-label">Email</span>
-              <span class="contact-link-value">imluckybajaj@gmail.com</span>
+              <span class="contact-link-value">rohits03.std@gmail.com</span>
             </div>
           </a>
           
-          <a href="tel:+917058551187" class="contact-link-card">
+          <a href="tel:7736257336" class="contact-link-card">
             <div class="contact-link-icon">📞</div>
             <div class="contact-link-info">
               <span class="contact-link-label">Phone</span>
-              <span class="contact-link-value">+91 705 855 1187</span>
+              <span class="contact-link-value">7736257336</span>
             </div>
           </a>
 
@@ -356,19 +356,21 @@
     </div>
 
     <footer>
-      <span class="footer-left">AB. — Portfolio 2025</span>
+      <span class="footer-left">Rohit — Portfolio 2025</span>
       <div class="footer-links">
         <a href="#">Twitter</a>
         <a href="https://www.linkedin.com/in/rohits773625/">LinkedIn</a>
         <a href="#">GitHub</a>
-        <a href="mailto:hello@portfolio.dev">Email</a>
+        <a href="mailto:rohits03.std@gmail.com">Email</a>
       </div>
     </footer>
   </div>
 </section>
 
-<!-- ── CASE STUDY MODAL ── -->
-<div class="modal-overlay" id="case-study-modal">
+<!-- ── CASE STUDY MODALS ── -->
+
+<!-- MODAL 1 -->
+<div class="modal-overlay case-study-modal" id="case-study-modal-1">
   <div class="modal-content">
     <div class="modal-header">
       <div class="modal-header-left">
@@ -376,11 +378,11 @@
           <i data-lucide="cpu" style="width:24px;height:24px;color:var(--accent);"></i>
         </div>
         <div>
-          <h2 class="modal-title" id="modal-title">Project Case Study</h2>
-          <div class="modal-tags" id="modal-tags">AI · Consumer Health · Personal Project · 0→1</div>
+          <h2 class="modal-title">Project 1 Case Study</h2>
+          <div class="modal-tags">AI · Consumer Health · Personal Project · 0→1</div>
         </div>
       </div>
-      <button class="modal-close" onclick="closeModal()">
+      <button class="modal-close" onclick="closeModal('case-study-modal-1')">
         <i data-lucide="x" style="width:18px;height:18px;"></i>
       </button>
     </div>
@@ -389,15 +391,15 @@
       <!-- Problem Statement -->
       <div class="cs-section">
         <div class="cs-label">Problem Statement</div>
-        <div class="cs-text" id="modal-problem">
-          Nutrition labels are <strong>information-heavy but decision-poor</strong>. Consumers face a wall of numbers — calories, macros, ingredient lists — with no clear signal on whether a product is suitable for them. The gap isn't data; it's interpretation. Even health-conscious shoppers hesitate at the shelf because translating nutritional data into a personal judgement call requires knowledge most people don't have.
+        <div class="cs-text">
+          Nutrition labels are <strong>information-heavy but decision-poor</strong>. Consumers face a wall of numbers — calories, macros, ingredient lists — with no clear signal on whether a product is suitable for them.
         </div>
       </div>
 
       <!-- User Personas -->
       <div class="cs-section">
         <div class="cs-label">User Personas</div>
-        <div class="persona-grid" id="modal-personas">
+        <div class="persona-grid">
           <div class="persona-card">
             <div class="persona-icon">🏋️</div>
             <div class="persona-name">Fitness Farhan</div>
@@ -405,28 +407,84 @@
             <div class="persona-needs">Tracks macros, wants quick protein-to-calorie ratios without reading every label</div>
             <div class="persona-quote">"I can't tell if this is actually high-protein or just marketed that way."</div>
           </div>
-          <div class="persona-card">
-            <div class="persona-icon">👩‍💼</div>
-            <div class="persona-name">Busy Priya</div>
-            <div class="persona-desc">Working professional, 34</div>
-            <div class="persona-needs">Wants fast, trustworthy decisions while grocery shopping with limited time</div>
-            <div class="persona-quote">"I have 2 minutes in the aisle — I just need a yes or no."</div>
-          </div>
-          <div class="persona-card">
-            <div class="persona-icon">🧓</div>
-            <div class="persona-name">Health-aware Meena</div>
-            <div class="persona-desc">Parent, 45 — managing family diet</div>
-            <div class="persona-needs">Monitoring sodium & sugar for a family member with diabetes</div>
-            <div class="persona-quote">"I never know which number to look at first."</div>
-          </div>
         </div>
       </div>
 
       <!-- Solution -->
       <div class="cs-section">
         <div class="cs-label">Solution & How it works</div>
-        <div class="cs-text" id="modal-solution">
+        <div class="cs-text">
           Smart Food Label Checker uses <strong>computer vision + AI reasoning</strong> to extract nutritional data from a label photo and deliver a structured health verdict in under 5 seconds.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL 2 -->
+<div class="modal-overlay case-study-modal" id="case-study-modal-2">
+  <div class="modal-content">
+    <div class="modal-header">
+      <div class="modal-header-left">
+        <div class="modal-icon">
+          <i data-lucide="pen-tool" style="width:24px;height:24px;color:var(--accent);"></i>
+        </div>
+        <div>
+          <h2 class="modal-title">Project 2 Case Study</h2>
+          <div class="modal-tags">Design · UX Research · Prototyping</div>
+        </div>
+      </div>
+      <button class="modal-close" onclick="closeModal('case-study-modal-2')">
+        <i data-lucide="x" style="width:18px;height:18px;"></i>
+      </button>
+    </div>
+    
+    <div class="modal-body">
+      <div class="cs-section">
+        <div class="cs-label">Problem Statement</div>
+        <div class="cs-text">
+          [Mock Text: Describe the core problem for Project 2 here.]
+        </div>
+      </div>
+      <div class="cs-section">
+        <div class="cs-label">Solution & How it works</div>
+        <div class="cs-text">
+          [Mock Text: Detail the solution for Project 2 here.]
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL 3 -->
+<div class="modal-overlay case-study-modal" id="case-study-modal-3">
+  <div class="modal-content">
+    <div class="modal-header">
+      <div class="modal-header-left">
+        <div class="modal-icon">
+          <i data-lucide="compass" style="width:24px;height:24px;color:var(--accent);"></i>
+        </div>
+        <div>
+          <h2 class="modal-title">Project 3 Case Study</h2>
+          <div class="modal-tags">Strategy · Product Growth · Data Analytics</div>
+        </div>
+      </div>
+      <button class="modal-close" onclick="closeModal('case-study-modal-3')">
+        <i data-lucide="x" style="width:18px;height:18px;"></i>
+      </button>
+    </div>
+    
+    <div class="modal-body">
+      <div class="cs-section">
+        <div class="cs-label">Problem Statement</div>
+        <div class="cs-text">
+          [Mock Text: Describe the core problem for Project 3 here.]
+        </div>
+      </div>
+      <div class="cs-section">
+        <div class="cs-label">Solution & How it works</div>
+        <div class="cs-text">
+          [Mock Text: Detail the solution for Project 3 here.]
         </div>
       </div>
     </div>
