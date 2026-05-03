@@ -24,3 +24,31 @@
       el.style.transitionDelay = (i * 0.08) + 's';
     }
   });
+
+  // Modal Logic
+  const modal = document.getElementById('case-study-modal');
+  const projectCards = document.querySelectorAll('#work .card');
+  
+  projectCards.forEach(card => {
+    card.addEventListener('click', () => {
+      // In a real scenario, you'd populate modal contents here based on the card clicked.
+      // For now, we update the title and show the modal template.
+      const title = card.querySelector('.card-title').innerText;
+      document.getElementById('modal-title').innerText = title;
+      
+      modal.classList.add('active');
+      document.body.style.overflow = 'hidden'; // Prevent background scrolling
+    });
+  });
+
+  window.closeModal = function() {
+    modal.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+
+  // Close when clicking outside content
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      closeModal();
+    }
+  });

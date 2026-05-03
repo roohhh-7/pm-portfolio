@@ -300,6 +300,72 @@
   </div>
 </section>
 
+<!-- ── CASE STUDY MODAL ── -->
+<div class="modal-overlay" id="case-study-modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <div class="modal-header-left">
+        <div class="modal-icon">
+          <i data-lucide="cpu" style="width:24px;height:24px;color:var(--accent);"></i>
+        </div>
+        <div>
+          <h2 class="modal-title" id="modal-title">Project Case Study</h2>
+          <div class="modal-tags" id="modal-tags">AI · Consumer Health · Personal Project · 0→1</div>
+        </div>
+      </div>
+      <button class="modal-close" onclick="closeModal()">
+        <i data-lucide="x" style="width:18px;height:18px;"></i>
+      </button>
+    </div>
+    
+    <div class="modal-body">
+      <!-- Problem Statement -->
+      <div class="cs-section">
+        <div class="cs-label">Problem Statement</div>
+        <div class="cs-text" id="modal-problem">
+          Nutrition labels are <strong>information-heavy but decision-poor</strong>. Consumers face a wall of numbers — calories, macros, ingredient lists — with no clear signal on whether a product is suitable for them. The gap isn't data; it's interpretation. Even health-conscious shoppers hesitate at the shelf because translating nutritional data into a personal judgement call requires knowledge most people don't have.
+        </div>
+      </div>
+
+      <!-- User Personas -->
+      <div class="cs-section">
+        <div class="cs-label">User Personas</div>
+        <div class="persona-grid" id="modal-personas">
+          <div class="persona-card">
+            <div class="persona-icon">🏋️</div>
+            <div class="persona-name">Fitness Farhan</div>
+            <div class="persona-desc">Gym-goer, 28</div>
+            <div class="persona-needs">Tracks macros, wants quick protein-to-calorie ratios without reading every label</div>
+            <div class="persona-quote">"I can't tell if this is actually high-protein or just marketed that way."</div>
+          </div>
+          <div class="persona-card">
+            <div class="persona-icon">👩‍💼</div>
+            <div class="persona-name">Busy Priya</div>
+            <div class="persona-desc">Working professional, 34</div>
+            <div class="persona-needs">Wants fast, trustworthy decisions while grocery shopping with limited time</div>
+            <div class="persona-quote">"I have 2 minutes in the aisle — I just need a yes or no."</div>
+          </div>
+          <div class="persona-card">
+            <div class="persona-icon">🧓</div>
+            <div class="persona-name">Health-aware Meena</div>
+            <div class="persona-desc">Parent, 45 — managing family diet</div>
+            <div class="persona-needs">Monitoring sodium & sugar for a family member with diabetes</div>
+            <div class="persona-quote">"I never know which number to look at first."</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Solution -->
+      <div class="cs-section">
+        <div class="cs-label">Solution & How it works</div>
+        <div class="cs-text" id="modal-solution">
+          Smart Food Label Checker uses <strong>computer vision + AI reasoning</strong> to extract nutritional data from a label photo and deliver a structured health verdict in under 5 seconds.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <script src="js/script.js"></script>
 
 </body>
