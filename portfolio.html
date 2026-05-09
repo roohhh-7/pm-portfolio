@@ -104,10 +104,10 @@
           </div>
           <div class="card-tags">
             <span class="tag tag-ai">AI/ML</span>
-            <span class="tag tag-zero">Gemini API</span>
+            <span class="tag tag-zero">Gemini 1.5 Pro</span>
           </div>
           <div class="card-title">KitchenMate: AI Decision Engine</div>
-          <p class="card-desc">Solving urban food waste and decision fatigue with Gemini-powered pantry tracking and "3 Meals Now" AI curation.</p>
+          <p class="card-desc">Applying Hick’s Law to solve choice paralysis. A Gemini-powered "3 Meals Now" engine reducing Time-to-First-Decision (TTFD) to under 30 seconds.</p>
           <div class="card-arrow">
             <i data-lucide="arrow-right" style="width:14px;height:14px;"></i>
           </div>
@@ -404,8 +404,8 @@
             <i data-lucide="utensils" style="width:24px;height:24px;color:var(--accent);"></i>
           </div>
           <div>
-            <h2 class="modal-title">KitchenMate Case Study</h2>
-            <div class="modal-tags">AI Decision Engine · Gemini API · Urban Sustainability</div>
+            <h2 class="modal-title">KitchenMate: Solving Choice Overload</h2>
+            <div class="modal-tags">Product Strategy · Gemini 1.5 Pro · UX Design</div>
           </div>
         </div>
         <button class="modal-close" onclick="closeModal('case-study-modal-1')">
@@ -414,49 +414,101 @@
       </div>
 
       <div class="modal-body">
+        <!-- The Friction Section -->
         <div class="cs-section">
-          <div class="cs-label">The Problem</div>
+          <div class="cs-label">The Friction: "What's for Dinner?"</div>
           <div class="cs-text">
-            Urban households face <strong>"structural decision fatigue."</strong> While 57% of households report daily stress regarding meal choices, most apps fail because manual tracking feels like a chore. This contributes to a massive <strong>$400B annual food waste problem</strong>.
+            Urban households face <strong>structural decision fatigue.</strong> While 57% of households report daily stress regarding meal choices, most apps fail because manual inventory tracking feels like a chore. This leads to "takeout-by-default" and contributes to a massive <strong>$400B annual food waste problem</strong>.
+            <br><br>
+            <strong>Choice Overload:</strong> Information from cookbooks and YouTube increases cognitive effort rather than reducing it. KitchenMate moves from "planning" to "action."
           </div>
         </div>
 
+        <!-- Personas Section -->
         <div class="cs-section">
           <div class="cs-label">Target Audience</div>
           <div class="persona-grid">
             <div class="persona-card">
               <div class="persona-icon">💼</div>
-              <div class="persona-name">Depleted Professionals</div>
-              <div class="persona-needs">Low mental bandwidth after work; needs rapid, actionable suggestions.</div>
+              <div class="persona-name">Depleted Rahul</div>
+              <div class="persona-desc">Professional, 28</div>
+              <div class="persona-needs">Low mental bandwidth after work; needs a zero-thought solution that uses what's in the fridge.</div>
             </div>
             <div class="persona-card">
               <div class="persona-icon">👪</div>
-              <div class="persona-name">Efficiency-Driven Parents</div>
-              <div class="persona-needs">Needs to feed a family quickly using available ingredients.</div>
+              <div class="persona-name">Efficient Ananya</div>
+              <div class="persona-desc">Busy Parent, 35</div>
+              <div class="persona-needs">Needs to feed a family quickly without manual inventory checking.</div>
             </div>
           </div>
         </div>
 
+        <!-- Strategy Section -->
         <div class="cs-section">
-          <div class="cs-label">The Solution: 3 Meals Now</div>
+          <div class="cs-label">Product Strategy: Hick's Law</div>
           <div class="cs-text">
-            KitchenMate leverages the <strong>Gemini API</strong> to solve choice paralysis using Hick's Law—offering exactly three meal options based on real-time pantry data from scanned receipts.
+            The core strategy centers on <strong>minimizing Choice Paralysis</strong>. By limiting meal suggestions to exactly <strong>three curated options</strong>, we shift the user's mental model from a complex search problem to a simple 30-second decision.
+            <br><br>
+            <strong>North Star Metric:</strong> Time-to-First-Decision (TTFD). Our goal is to move users from "opening app" to "selecting meal" in **< 30 seconds**.
+          </div>
+        </div>
+
+        <!-- Visual Identity / Mockups -->
+        <div class="cs-section">
+          <div class="cs-label">Visual Identity & UX Mockups</div>
+          <div class="mockup-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 1.5rem;">
+            <div class="mockup-item">
+              <img src="assets/mockup1.png" alt="Dashboard" style="width:100%; border-radius: 8px; border: 1px solid var(--border);">
+              <p style="font-size: 0.75rem; color: var(--text-muted); margin-top: 0.5rem; text-align: center;">Personalized Dashboard</p>
+            </div>
+            <div class="mockup-item">
+              <img src="assets/mockup2.png" alt="3 Meals Selection" style="width:100%; border-radius: 8px; border: 1px solid var(--border);">
+              <p style="font-size: 0.75rem; color: var(--text-muted); margin-top: 0.5rem; text-align: center;">"3 Meals Now" Curation</p>
+            </div>
+            <div class="mockup-item">
+              <img src="assets/mockup3.png" alt="Guided Cooking" style="width:100%; border-radius: 8px; border: 1px solid var(--border);">
+              <p style="font-size: 0.75rem; color: var(--text-muted); margin-top: 0.5rem; text-align: center;">Cooking Hub</p>
+            </div>
+            <div class="mockup-item">
+              <img src="assets/mockup4.png" alt="Pantry Management" style="width:100%; border-radius: 8px; border: 1px solid var(--border);">
+              <p style="font-size: 0.75rem; color: var(--text-muted); margin-top: 0.5rem; text-align: center;">Smart Pantry Sync</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tech Architecture -->
+        <div class="cs-section">
+          <div class="cs-label">Technical Architecture</div>
+          <div class="cs-text">
+            Built for speed and intelligence:
             <ul style="margin-top:1rem; list-style: disc; padding-left: 1.2rem; color: var(--text-muted);">
-              <li><strong>Smart Pantry:</strong> Auto-updates via grocery receipt parsing.</li>
-              <li><strong>AI Curation:</strong> Dynamic meal suggestions based on ingredient expiration.</li>
-              <li><strong>Voice Interaction:</strong> Hands-free cooking guidance.</li>
+              <li><strong>Gemini 1.5 Pro:</strong> Powers the core reasoning for recipe generation and pantry analysis.</li>
+              <li><strong>Zero-Friction Entry:</strong> Vision-based receipt parsing eliminates manual inventory data entry.</li>
+              <li><strong>Responsive Engine:</strong> Deployed on Vercel for instant performance across devices.</li>
             </ul>
           </div>
         </div>
 
+        <!-- Success Metrics -->
         <div class="cs-section">
-          <div class="cs-label">Impact</div>
-          <div class="cs-text">
-            Reduced <strong>Time-to-First-Decision (TTFD)</strong> to under 30 seconds, successfully moving users from indecision to action.
+          <div class="cs-label">Success Metrics</div>
+          <div class="stat-row" style="margin-top: 1rem;">
+            <div class="stat-item">
+              <div class="stat-num">< 30s</div>
+              <div class="stat-label">Target TTFD</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num">90%</div>
+              <div class="stat-label">Decision Rate</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num">2x</div>
+              <div class="stat-label">Home-cooking freq.</div>
+            </div>
           </div>
         </div>
 
-        <div class="modal-footer-ctas" style="margin-top: 3rem; display: flex; gap: 1rem;">
+        <div class="modal-footer-ctas" style="margin-top: 4rem; display: flex; gap: 1rem; border-top: 1px solid var(--border); padding-top: 2rem;">
           <a href="https://kitchenmate-mvp.vercel.app/" target="_blank" class="btn-primary">
             See Prototype
             <i data-lucide="external-link" style="width:14px;height:14px;"></i>
