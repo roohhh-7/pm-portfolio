@@ -144,8 +144,24 @@
             <span class="tag tag-design" style="background: rgba(52, 211, 153, 0.1); color: #059669;">Prototyping</span>
           </div>
           <div class="card-title">AI-Driven UGC Marketplace</div>
-          <p class="card-desc">Prototyping a structured talent discovery platform using AI-assisted design and
-            bi-directional marketplace logic.</p>
+          <p class="card-desc">Prototyping a structured talent discovery platform using AI-assisted design and bi-directional marketplace logic.</p>
+          <div class="card-arrow">
+            <i data-lucide="arrow-right" style="width:14px;height:14px;"></i>
+          </div>
+        </div>
+
+        <!-- Project 4 Card -->
+        <div class="card reveal" style="transition-delay:0.3s;" data-modal="case-study-modal-4">
+          <div class="polaroid polaroid-bg-1" style="background: linear-gradient(135deg, #fce7f3 0%, #fbcfe8 100%);">
+            <img src="assets/image1.png" alt="Everafter Wedding Planning"
+              style="width:100%; height:100%; object-fit:cover; display:block;" />
+          </div>
+          <div class="card-tags">
+            <span class="tag tag-design" style="background: rgba(236, 72, 153, 0.1); color: #db2777;">UX Overhaul</span>
+            <span class="tag tag-strat" style="background: rgba(79, 70, 229, 0.1); color: #4f46e5;">Conversion</span>
+          </div>
+          <div class="card-title">Everafter: UX Overhaul</div>
+          <p class="card-desc">Designing for seamless wedding planning in India. Reducing chaotic offline workflows through guided discovery and visual storytelling.</p>
           <div class="card-arrow">
             <i data-lucide="arrow-right" style="width:14px;height:14px;"></i>
           </div>
@@ -415,11 +431,7 @@
         <div class="cs-section">
           <div class="cs-label">Problem Statement</div>
           <div class="cs-text">
-            Urban households face <strong>structural decision fatigue.</strong> While 57% of households report daily
-            stress regarding meal choices, most apps fail because manual inventory tracking feels like a chore. The gap
-            isn't a lack of recipes; it's the <strong>cognitive load of selection.</strong> Even motivated cooks default
-            to takeout because translating fridge contents into a plan requires mental bandwidth they don't have after a
-            workday.
+            Urban households face <strong>structural decision fatigue.</strong> While 57% of households report daily stress regarding meal choices, most apps fail because manual inventory tracking feels like a chore. The gap isn't a lack of recipes; it's the <strong>cognitive load of selection.</strong> Even motivated cooks default to takeout because translating fridge contents into a plan requires mental bandwidth they don't have after a workday.
           </div>
         </div>
 
@@ -431,8 +443,7 @@
               <div class="persona-icon">💼</div>
               <div class="persona-name">Depleted Rahul</div>
               <div class="persona-desc">Professional, 28</div>
-              <div class="persona-needs">Low mental bandwidth after work; wants a zero-thought solution that uses what's
-                in the fridge.</div>
+              <div class="persona-needs">Low mental bandwidth after work; wants a zero-thought solution that uses what's in the fridge.</div>
               <div class="persona-quote">"I'm too tired to think—just tell me what I can cook in 20 mins."</div>
             </div>
             <div class="persona-card">
@@ -440,8 +451,7 @@
               <div class="persona-name">Efficient Ananya</div>
               <div class="persona-desc">Busy Parent, 35</div>
               <div class="persona-needs">Needs to feed a family quickly without manual inventory checking.</div>
-              <div class="persona-quote">"I have ingredients, but no plan. Help me turn this grocery bag into dinner."
-              </div>
+              <div class="persona-quote">"I have ingredients, but no plan. Help me turn this grocery bag into dinner."</div>
             </div>
           </div>
         </div>
@@ -450,460 +460,509 @@
         <div class="cs-section">
           <div class="cs-label">Solution & How It Works</div>
           <div class="cs-text">
-            KitchenMate uses <strong>Gemini 1.5 Pro + Computer Vision</strong> to bridge the gap between pantry
-            inventory and daily action.
+            KitchenMate uses <strong>Gemini 1.5 Pro + Computer Vision</strong> to bridge the gap between pantry inventory and daily action.
           </div>
           <div class="how-it-works-steps" style="margin-top: 1.5rem; display: flex; flex-direction: column; gap: 1rem;">
             <div class="step-item" style="display: flex; gap: 1rem; align-items: flex-start;">
-              <div class="step-num"
-                style="background: var(--accent); color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">
-                1</div>
-              <div class="step-text"><strong>Smart Sync:</strong> User photographs grocery receipts to auto-populate the
-                digital pantry.</div>
+              <div class="step-num" style="background: var(--accent); color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">1</div>
+              <div class="step-text"><strong>Smart Sync:</strong> User photographs grocery receipts to auto-populate the digital pantry.</div>
             </div>
             <div class="step-item" style="display: flex; gap: 1rem; align-items: flex-start;">
-              <div class="step-num"
-                style="background: var(--accent); color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">
-                2</div>
-              <div class="step-text"><strong>AI Curation:</strong> Gemini parses ingredients, expiration dates, and user
-                preferences to find matching recipes.</div>
+              <div class="step-num" style="background: var(--accent); color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">2</div>
+              <div class="step-text"><strong>AI Curation:</strong> Gemini parses ingredients, expiration dates, and user preferences to find matching recipes.</div>
             </div>
             <div class="step-item" style="display: flex; gap: 1rem; align-items: flex-start;">
-              <div class="step-num"
-                style="background: var(--accent); color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">
-                3</div>
-              <div class="step-text"><strong>3 Meals Now:</strong> To avoid choice paralysis (Hick's Law), the app
-                presents exactly three curated meal options.</div>
+              <div class="step-num" style="background: var(--accent); color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">3</div>
+              <div class="step-text"><strong>3 Meals Now:</strong> To avoid choice paralysis (Hick's Law), the app presents exactly three curated meal options.</div>
             </div>
             <div class="step-item" style="display: flex; gap: 1rem; align-items: flex-start;">
-              <div class="step-num"
-                style="background: var(--accent); color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">
-                4</div>
-              <div class="step-text"><strong>Guided Prep:</strong> Delivers hands-free, voice-guided instructions to
-                move the user from decision to plate.</div>
+              <div class="step-num" style="background: var(--accent); color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">4</div>
+              <div class="step-text"><strong>Guided Prep:</strong> Delivers hands-free, voice-guided instructions to move the user from decision to plate.</div>
             </div>
           </div>
         </div>
 
         <!-- Success Metrics -->
         <div class="cs-section">
-          <div class="cs-label">Success Metrics (Hypothetical Targets)</div>
+          <div class="cs-label">Success Metrics</div>
           <div class="stat-row" style="margin-top: 1rem;">
             <div class="stat-item">
-              <div class="stat-num">
-                < 30s</div>
-                  <div class="stat-label">Time to Verdict</div>
-              </div>
-              <div class="stat-item">
-                <div class="stat-num">90%</div>
-                <div class="stat-label">Decision Conversion</div>
-              </div>
-              <div class="stat-item">
-                <div class="stat-num">2x</div>
-                <div class="stat-label">Home-cooking Freq.</div>
-              </div>
-              <div class="stat-item">
-                <div class="stat-num">-30%</div>
-                <div class="stat-label">Waste Reduction</div>
-              </div>
+              <div class="stat-num">&lt; 30s</div>
+              <div class="stat-label">Time to Verdict</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num">90%</div>
+              <div class="stat-label">Decision Conversion</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num">2x</div>
+              <div class="stat-label">Home-cooking Freq.</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num">-30%</div>
+              <div class="stat-label">Waste Reduction</div>
             </div>
           </div>
+        </div>
 
-          <!-- Visual Identity / Mockups -->
-          <div class="cs-section">
-            <div class="cs-label">Visual Identity & UX Mockups</div>
-            <div class="mockup-grid"
-              style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 1.5rem;">
-              <div class="mockup-item">
-                <img src="assets/mockup1.png" alt="Dashboard"
-                  style="width:100%; border-radius: 8px; border: 1px solid var(--border);">
-                <p style="font-size: 0.75rem; color: var(--text-muted); margin-top: 0.5rem; text-align: center;">
-                  Personalized Dashboard</p>
-              </div>
-              <div class="mockup-item">
-                <img src="assets/mockup2.png" alt="3 Meals Selection"
-                  style="width:100%; border-radius: 8px; border: 1px solid var(--border);">
-                <p style="font-size: 0.75rem; color: var(--text-muted); margin-top: 0.5rem; text-align: center;">"3
-                  Meals Now" Curation</p>
-              </div>
-              <div class="mockup-item">
-                <img src="assets/mockup3.png" alt="Guided Cooking"
-                  style="width:100%; border-radius: 8px; border: 1px solid var(--border);">
-                <p style="font-size: 0.75rem; color: var(--text-muted); margin-top: 0.5rem; text-align: center;">Cooking
-                  Hub</p>
-              </div>
-              <div class="mockup-item">
-                <img src="assets/mockup4.png" alt="Pantry Management"
-                  style="width:100%; border-radius: 8px; border: 1px solid var(--border);">
-                <p style="font-size: 0.75rem; color: var(--text-muted); margin-top: 0.5rem; text-align: center;">Smart
-                  Pantry Sync</p>
-              </div>
+        <!-- Visual Identity / Mockups -->
+        <div class="cs-section">
+          <div class="cs-label">Visual Identity & UX Mockups</div>
+          <div class="mockup-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 1.5rem;">
+            <div class="mockup-item">
+              <img src="assets/mockup1.png" alt="Dashboard" style="width:100%; border-radius: 8px; border: 1px solid var(--border);">
+              <p style="font-size: 0.75rem; color: var(--text-muted); margin-top: 0.5rem; text-align: center;">Personalized Dashboard</p>
+            </div>
+            <div class="mockup-item">
+              <img src="assets/mockup2.png" alt="3 Meals Selection" style="width:100%; border-radius: 8px; border: 1px solid var(--border);">
+              <p style="font-size: 0.75rem; color: var(--text-muted); margin-top: 0.5rem; text-align: center;">"3 Meals Now" Curation</p>
+            </div>
+            <div class="mockup-item">
+              <img src="assets/mockup3.png" alt="Guided Cooking" style="width:100%; border-radius: 8px; border: 1px solid var(--border);">
+              <p style="font-size: 0.75rem; color: var(--text-muted); margin-top: 0.5rem; text-align: center;">Cooking Hub</p>
+            </div>
+            <div class="mockup-item">
+              <img src="assets/mockup4.png" alt="Pantry Management" style="width:100%; border-radius: 8px; border: 1px solid var(--border);">
+              <p style="font-size: 0.75rem; color: var(--text-muted); margin-top: 0.5rem; text-align: center;">Smart Pantry Sync</p>
             </div>
           </div>
+        </div>
 
-          <!-- Core Features -->
-          <div class="cs-section">
-            <div class="cs-label">Core Features</div>
-            <div class="features-list"
-              style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 1rem;">
-              <div class="feature-item" style="color: var(--text-muted); font-size: 0.875rem;">🔍 <strong>Smart Pantry
-                  Sync</strong>: Reads receipts via vision AI</div>
-              <div class="feature-item" style="color: var(--text-muted); font-size: 0.875rem;">🍽️ <strong>"3 Meals
-                  Now"</strong>: Curation based on Hick's Law</div>
-              <div class="feature-item" style="color: var(--text-muted); font-size: 0.875rem;">📅 <strong>Expiration
-                  Alerts</strong>: Priority-based suggestions</div>
-              <div class="feature-item" style="color: var(--text-muted); font-size: 0.875rem;">🎙️ <strong>Guided
-                  Cooking</strong>: Hands-free voice assistance</div>
-            </div>
+        <!-- Core Features -->
+        <div class="cs-section">
+          <div class="cs-label">Core Features</div>
+          <div class="features-list" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 1rem;">
+            <div class="feature-item" style="color: var(--text-muted); font-size: 0.875rem;">🔍 <strong>Smart Pantry Sync</strong>: Reads receipts via vision AI</div>
+            <div class="feature-item" style="color: var(--text-muted); font-size: 0.875rem;">🍽️ <strong>"3 Meals Now"</strong>: Curation based on Hick's Law</div>
+            <div class="feature-item" style="color: var(--text-muted); font-size: 0.875rem;">📅 <strong>Expiration Alerts</strong>: Priority-based suggestions</div>
+            <div class="feature-item" style="color: var(--text-muted); font-size: 0.875rem;">🎙️ <strong>Guided Cooking</strong>: Hands-free voice assistance</div>
           </div>
+        </div>
 
-          <!-- Key Design Decisions & Tradeoffs -->
-          <div class="cs-section">
-            <div class="cs-label">Key Design Decisions & Tradeoffs</div>
-            <div class="cs-text" style="font-size: 0.875rem;">
-              <p style="margin-bottom: 0.8rem;"><strong>Choice Limitation over Exploration:</strong> Decided to limit
-                suggestions to exactly 3 meals to solve paralysis, even if users might want more variety. This
-                prioritizes "time-to-action" over discovery.</p>
-              <p style="margin-bottom: 0.8rem;"><strong>Automated Tracking over Manual Accuracy:</strong> Prioritized
-                receipt scanning for speed, accepting that some niche items might need manual correction. Acceptable
-                tradeoff for user retention.</p>
-              <p><strong>Decision-First over Content-First:</strong> The UI focuses on "what to cook now" rather than
-                browsing a library of recipes. Sacrifice of traditional engagement for utility.</p>
-            </div>
+        <!-- Key Design Decisions & Tradeoffs -->
+        <div class="cs-section">
+          <div class="cs-label">Key Design Decisions & Tradeoffs</div>
+          <div class="cs-text" style="font-size: 0.875rem;">
+            <p style="margin-bottom: 0.8rem;"><strong>Choice Limitation over Exploration:</strong> Decided to limit suggestions to exactly 3 meals to solve paralysis, even if users might want more variety. This prioritizes "time-to-action" over discovery.</p>
+            <p style="margin-bottom: 0.8rem;"><strong>Automated Tracking over Manual Accuracy:</strong> Prioritized receipt scanning for speed, accepting that some niche items might need manual correction. Acceptable tradeoff for user retention.</p>
+            <p><strong>Decision-First over Content-First:</strong> The UI focuses on "what to cook now" rather than browsing a library of recipes. Sacrifice of traditional engagement for utility.</p>
           </div>
+        </div>
 
-          <div class="modal-footer-ctas"
-            style="margin-top: 4rem; display: flex; gap: 1rem; border-top: 1px solid var(--border); padding-top: 2rem;">
-            <a href="https://kitchenmate-mvp.vercel.app/" target="_blank" class="btn-primary">
-              See Prototype
-              <i data-lucide="external-link" style="width:14px;height:14px;"></i>
-            </a>
-            <a href="https://www.notion.so/KitchenMate-product-case-study-3578fab9854d8023ade0e43144604195"
-              target="_blank" class="btn-secondary">
-              Check full case study
-              <i data-lucide="arrow-right" style="width:14px;height:14px;"></i>
-            </a>
-          </div>
+        <div class="modal-footer-ctas" style="margin-top: 4rem; display: flex; gap: 1rem; border-top: 1px solid var(--border); padding-top: 2rem;">
+          <a href="https://kitchenmate-mvp.vercel.app/" target="_blank" class="btn-primary">
+            See Prototype
+            <i data-lucide="external-link" style="width:14px;height:14px;"></i>
+          </a>
+          <a href="https://www.notion.so/KitchenMate-product-case-study-3578fab9854d8023ade0e43144604195" target="_blank" class="btn-secondary">
+            Check full case study
+            <i data-lucide="arrow-right" style="width:14px;height:14px;"></i>
+          </a>
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="modal-overlay case-study-modal" id="case-study-modal-2">
-      <div class="modal-content">
-        <div class="modal-header">
-          <div class="modal-header-left">
-            <div class="modal-icon">
-              <i data-lucide="hospital" style="width:24px;height:24px;color:var(--accent);"></i>
-            </div>
-            <div>
-              <h2 class="modal-title">Ayurvedic Digital Twin Scheduler</h2>
-              <div class="modal-tags">HealthTech · Workflow Automation · Optimization</div>
-            </div>
+  <!-- MODAL 2 -->
+  <div class="modal-overlay case-study-modal" id="case-study-modal-2">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-header-left">
+          <div class="modal-icon">
+            <i data-lucide="hospital" style="width:24px;height:24px;color:var(--accent);"></i>
           </div>
-          <button class="modal-close" onclick="closeModal('case-study-modal-2')">
-            <i data-lucide="x" style="width:18px;height:18px;"></i>
-          </button>
-        </div>
-
-        <div class="modal-body">
-          <!-- Problem Statement -->
-          <div class="cs-section">
-            <div class="cs-label">Problem Statement</div>
-            <div class="cs-text">
-              Ayurvedic clinical workflows, particularly multi-day <strong>Panchakarma</strong> programs, are plagued by
-              scheduling entropy. Manual coordination of therapists, rooms, and strict clinical protocols leads to
-              <strong>"ghost" appointments</strong> (staff not present) and timing violations (e.g., morning-specific
-              treatments scheduled in the afternoon). The gap isn't just a calendar; it's the lack of <strong>real-time
-                clinical context</strong> and verified staff presence.
-            </div>
-          </div>
-
-          <!-- User Personas -->
-          <div class="cs-section">
-            <div class="cs-label">User Personas</div>
-            <div class="persona-grid">
-              <div class="persona-card">
-                <div class="persona-icon">👩‍⚕️</div>
-                <div class="persona-name">Dr. Anjali</div>
-                <div class="persona-desc">Head Physician, 48</div>
-                <div class="persona-needs">Ensuring strict protocol adherence without manual spreadsheet management.
-                </div>
-                <div class="persona-quote">"I need protocols followed perfectly without spending 4 hours on scheduling."
-                </div>
-              </div>
-              <div class="persona-card">
-                <div class="persona-icon">👨‍💼</div>
-                <div class="persona-name">Sanjay</div>
-                <div class="persona-desc">Clinic Admin, 35</div>
-                <div class="persona-needs">Managing staff and room occupancy with real-time attendance changes.</div>
-                <div class="persona-quote">"Managing 30 therapists is impossible when attendance changes hourly."</div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Solution & How It Works -->
-          <div class="cs-section">
-            <div class="cs-label">Solution & How It Works</div>
-            <div class="cs-text">
-              A real-time scheduling engine that synchronizes physical clinic assets with biometric staff presence.
-            </div>
-            <div class="how-it-works-steps"
-              style="margin-top: 1.5rem; display: flex; flex-direction: column; gap: 1rem;">
-              <div class="step-item" style="display: flex; gap: 1rem; align-items: flex-start;">
-                <div class="step-num"
-                  style="background: var(--accent); color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">
-                  1</div>
-                <div class="step-text"><strong>Biometric Sync:</strong> Live staff availability is verified via
-                  check-ins, eliminating "ghost" slots.</div>
-              </div>
-              <div class="step-item" style="display: flex; gap: 1rem; align-items: flex-start;">
-                <div class="step-num"
-                  style="background: var(--accent); color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">
-                  2</div>
-                <div class="step-text"><strong>Digital Twin Replica:</strong> Creates a virtual live-map of rooms,
-                  equipment, and staff for conflict detection.</div>
-              </div>
-              <div class="step-item" style="display: flex; gap: 1rem; align-items: flex-start;">
-                <div class="step-num"
-                  style="background: var(--accent); color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">
-                  3</div>
-                <div class="step-text"><strong>Review-Aware Matching:</strong> Pairs patients with therapists based on
-                  ratings and seniority.</div>
-              </div>
-              <div class="step-item" style="display: flex; gap: 1rem; align-items: flex-start;">
-                <div class="step-num"
-                  style="background: var(--accent); color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">
-                  4</div>
-                <div class="step-text"><strong>Protocol Locks:</strong> Automatically enforces time-locked clinical
-                  rules (e.g., Morning-only treatments).</div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Success Metrics -->
-          <div class="cs-section">
-            <div class="cs-label">Success Metrics (Targets)</div>
-            <div class="stat-row" style="margin-top: 1rem;">
-              <div class="stat-item">
-                <div class="stat-num">
-                  < 10m</div>
-                    <div class="stat-label">Scheduling Time</div>
-                </div>
-                <div class="stat-item">
-                  <div class="stat-num">0%</div>
-                  <div class="stat-label">Booking Overlaps</div>
-                </div>
-                <div class="stat-item">
-                  <div class="stat-num">+40%</div>
-                  <div class="stat-label">Staff Continuity</div>
-                </div>
-                <div class="stat-item">
-                  <div class="stat-num">100%</div>
-                  <div class="stat-label">Protocol Compliance</div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Core Features -->
-            <div class="cs-section">
-              <div class="cs-label">Core Features</div>
-              <div class="features-list"
-                style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 1rem;">
-                <div class="feature-item" style="color: var(--text-muted); font-size: 0.875rem;">👤 <strong>Biometric
-                    Presence Sync</strong>: Real-time staff tracking</div>
-                <div class="feature-item" style="color: var(--text-muted); font-size: 0.875rem;">🏥 <strong>Clinical
-                    Digital Twin</strong>: Virtual map of assets</div>
-                <div class="feature-item" style="color: var(--text-muted); font-size: 0.875rem;">⭐️ <strong>Review-Aware
-                    Engine</strong>: Rating-driven matching</div>
-                <div class="feature-item" style="color: var(--text-muted); font-size: 0.875rem;">⏳ <strong>Protocol
-                    Time-Locks</strong>: Treatment time filtering</div>
-              </div>
-            </div>
-
-            <!-- Key Design Decisions & Tradeoffs -->
-            <div class="cs-section">
-              <div class="cs-label">Key Design Decisions & Tradeoffs</div>
-              <div class="cs-text" style="font-size: 0.875rem;">
-                <p style="margin-bottom: 0.8rem;"><strong>System-First vs. Manual-Override:</strong> The engine
-                  generates the optimal path, but physicians retain override authority. Prioritizes efficiency while
-                  maintaining medical accountability.</p>
-                <p style="margin-bottom: 0.8rem;"><strong>Protocol Rigidity over Spontaneity:</strong> Strict timing
-                  locks prevent clinical errors but require high staff punctuality. Safety over flexibility.</p>
-                <p><strong>Hardware Dependency:</strong> System requires biometric hardware for 100% data accuracy,
-                  choosing verified presence over manual software input.</p>
-              </div>
-            </div>
-
-            <div class="modal-footer-ctas"
-              style="margin-top: 4rem; display: flex; gap: 1rem; border-top: 1px solid var(--border); padding-top: 2rem;">
-              <a href="https://www.notion.so/Review-Aware-Digital-Twin-Scheduling-System-for-Ayurvedic-Clinical-Workflow-Automation-2f68fab9854d8078ac2aec2bedb6eb7e"
-                target="_blank" class="btn-primary">
-                Check full case study
-                <i data-lucide="arrow-right" style="width:14px;height:14px;"></i>
-              </a>
-            </div>
+          <div>
+            <h2 class="modal-title">Ayurvedic Digital Twin Scheduler</h2>
+            <div class="modal-tags">HealthTech · Workflow Automation · Optimization</div>
           </div>
         </div>
+        <button class="modal-close" onclick="closeModal('case-study-modal-2')">
+          <i data-lucide="x" style="width:18px;height:18px;"></i>
+        </button>
       </div>
 
-      <div class="modal-overlay case-study-modal" id="case-study-modal-3">
-        <div class="modal-content">
-          <div class="modal-header">
-            <div class="modal-header-left">
-              <div class="modal-icon">
-                <i data-lucide="shopping-bag" style="width:24px;height:24px;color:var(--accent);"></i>
-              </div>
-              <div>
-                <h2 class="modal-title">AI-Driven UGC Marketplace</h2>
-                <div class="modal-tags">Marketplace · Prototyping · Lovable.dev</div>
-              </div>
-            </div>
-            <button class="modal-close" onclick="closeModal('case-study-modal-3')">
-              <i data-lucide="x" style="width:18px;height:18px;"></i>
-            </button>
+      <div class="modal-body">
+        <!-- Problem Statement -->
+        <div class="cs-section">
+          <div class="cs-label">Problem Statement</div>
+          <div class="cs-text">
+            Ayurvedic clinical workflows, particularly multi-day <strong>Panchakarma</strong> programs, are plagued by scheduling entropy. Manual coordination of therapists, rooms, and strict clinical protocols leads to <strong>"ghost" appointments</strong> (staff not present) and timing violations (e.g., morning-specific treatments scheduled in the afternoon). The gap isn't just a calendar; it's the lack of <strong>real-time clinical context</strong> and verified staff presence.
           </div>
+        </div>
 
-          <div class="modal-body">
-            <!-- Problem Statement -->
-            <div class="cs-section">
-              <div class="cs-label">Problem Statement</div>
-              <div class="cs-text">
-                Current UGC platforms face a <strong>"discovery gap"</strong> where high-quality content is buried under
-                unstructured listings. Creators lack professional workflows to showcase their work, while brands
-                struggle to find relevant talent efficiently. The friction isn't a lack of data, but a lack of
-                <strong>interpretation and structure.</strong> This project prototypes a solution to bridge that gap by
-                simplifying discovery through AI-assisted categorization.
-              </div>
+        <!-- User Personas -->
+        <div class="cs-section">
+          <div class="cs-label">User Personas</div>
+          <div class="persona-grid">
+            <div class="persona-card">
+              <div class="persona-icon">👩‍⚕️</div>
+              <div class="persona-name">Dr. Anjali</div>
+              <div class="persona-desc">Head Physician, 48</div>
+              <div class="persona-needs">Ensuring strict protocol adherence without manual spreadsheet management.</div>
+              <div class="persona-quote">"I need protocols followed perfectly without spending 4 hours on scheduling."</div>
             </div>
-
-            <!-- User Personas -->
-            <div class="cs-section">
-              <div class="cs-label">User Personas</div>
-              <div class="persona-grid">
-                <div class="persona-card">
-                  <div class="persona-icon">📸</div>
-                  <div class="persona-name">Creative Chris</div>
-                  <div class="persona-desc">UGC Creator, 24</div>
-                  <div class="persona-needs">Structured way to showcase work to brands without technical headaches.
-                  </div>
-                  <div class="persona-quote">"I have the talent, but I need a professional way to be seen by the right
-                    brands."</div>
-                </div>
-                <div class="persona-card">
-                  <div class="persona-icon">💼</div>
-                  <div class="persona-name">Marketing Maya</div>
-                  <div class="persona-desc">Brand Manager, 31</div>
-                  <div class="persona-needs">Finding authentic voices efficiently without filtering low-quality
-                    listings.</div>
-                  <div class="persona-quote">"I spend too much time digging—I just need a curated list of relevant
-                    talent."</div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Solution & How It Works -->
-            <div class="cs-section">
-              <div class="cs-label">Solution & How It Works</div>
-              <div class="cs-text">
-                A bi-directional marketplace focused on browsing efficiency and smart content structuring.
-              </div>
-              <div class="how-it-works-steps"
-                style="margin-top: 1.5rem; display: flex; flex-direction: column; gap: 1rem;">
-                <div class="step-item" style="display: flex; gap: 1rem; align-items: flex-start;">
-                  <div class="step-num"
-                    style="background: var(--accent); color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">
-                    1</div>
-                  <div class="step-text"><strong>Smart Onboarding:</strong> Tailored sign-up flows for creators and
-                    brands to define goals and niches.</div>
-                </div>
-                <div class="step-item" style="display: flex; gap: 1rem; align-items: flex-start;">
-                  <div class="step-num"
-                    style="background: var(--accent); color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">
-                    2</div>
-                  <div class="step-text"><strong>Structured Upload:</strong> A guided 4-step process for creators to
-                    list content with automated quality checks.</div>
-                </div>
-                <div class="step-item" style="display: flex; gap: 1rem; align-items: flex-start;">
-                  <div class="step-num"
-                    style="background: var(--accent); color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">
-                    3</div>
-                  <div class="step-text"><strong>Curated Discovery:</strong> Advanced marketplace experience focused on
-                    browsing efficiency and smart filtering.</div>
-                </div>
-                <div class="step-item" style="display: flex; gap: 1rem; align-items: flex-start;">
-                  <div class="step-num"
-                    style="background: var(--accent); color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">
-                    4</div>
-                  <div class="step-text"><strong>Engagement Loop:</strong> Feedback-driven iteration that refines
-                    discovery logic based on real user interactions.</div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Success Metrics -->
-            <div class="cs-section">
-              <div class="cs-label">Success Metrics (Targets)</div>
-              <div class="stat-row" style="margin-top: 1rem;">
-                <div class="stat-item">
-                  <div class="stat-num">
-                    < 3m</div>
-                      <div class="stat-label">Time to List</div>
-                  </div>
-                  <div class="stat-item">
-                    <div class="stat-num">80%</div>
-                    <div class="stat-label">Match Rate</div>
-                  </div>
-                  <div class="stat-item">
-                    <div class="stat-num">-40%</div>
-                    <div class="stat-label">Discovery Friction</div>
-                  </div>
-                  <div class="stat-item">
-                    <div class="stat-num">4.2★</div>
-                    <div class="stat-label">User Satisfaction</div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Core Features -->
-              <div class="cs-section">
-                <div class="cs-label">Core Features</div>
-                <div class="features-list"
-                  style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 1rem;">
-                  <div class="feature-item" style="color: var(--text-muted); font-size: 0.875rem;">🚀 <strong>Rapid
-                      Onboarding</strong>: Quick profile creation</div>
-                  <div class="feature-item" style="color: var(--text-muted); font-size: 0.875rem;">📤 <strong>Guided
-                      Listing Flow</strong>: Structured content upload</div>
-                  <div class="feature-item" style="color: var(--text-muted); font-size: 0.875rem;">🔍 <strong>Intuitive
-                      Discovery</strong>: Advanced filtering tools</div>
-                  <div class="feature-item" style="color: var(--text-muted); font-size: 0.875rem;">📁 <strong>Smart
-                      Categorization</strong>: Automated tagging</div>
-                </div>
-              </div>
-
-              <!-- Key Design Decisions & Tradeoffs -->
-              <div class="cs-section">
-                <div class="cs-label">Key Design Decisions & Tradeoffs</div>
-                <div class="cs-text" style="font-size: 0.875rem;">
-                  <p style="margin-bottom: 0.8rem;"><strong>Prototyping over Production:</strong> Chose Lovable.dev for
-                    rapid iteration to validate the user journey first, sacrificing deep customization for speed.</p>
-                  <p style="margin-bottom: 0.8rem;"><strong>Bi-Directional UX Focus:</strong> Prioritized interconnected
-                    flows for both creators and brands, adding design complexity to ensure a balanced ecosystem.</p>
-                  <p><strong>AI-Guided UI Exploration:</strong> Used AI suggestions to test multiple approaches quickly,
-                    balancing choice-limitation with discovery-breadth.</p>
-                </div>
-              </div>
-
-              <div class="modal-footer-ctas"
-                style="margin-top: 4rem; display: flex; gap: 1rem; border-top: 1px solid var(--border); padding-top: 2rem;">
-                <a href="https://www.notion.so/Ai-driven-UGC-marketplace-platform-prototyping-documentation-2f78fab9854d80b5a542cb3ce79681fd"
-                  target="_blank" class="btn-primary">
-                  Check full case study
-                  <i data-lucide="arrow-right" style="width:14px;height:14px;"></i>
-                </a>
-              </div>
+            <div class="persona-card">
+              <div class="persona-icon">👨‍💼</div>
+              <div class="persona-name">Sanjay</div>
+              <div class="persona-desc">Clinic Admin, 35</div>
+              <div class="persona-needs">Managing staff and room occupancy with real-time attendance changes.</div>
+              <div class="persona-quote">"Managing 30 therapists is impossible when attendance changes hourly."</div>
             </div>
           </div>
         </div>
+
+        <!-- Solution & How It Works -->
+        <div class="cs-section">
+          <div class="cs-label">Solution & How It Works</div>
+          <div class="cs-text">
+            A real-time scheduling engine that synchronizes physical clinic assets with biometric staff presence.
+          </div>
+          <div class="how-it-works-steps" style="margin-top: 1.5rem; display: flex; flex-direction: column; gap: 1rem;">
+            <div class="step-item" style="display: flex; gap: 1rem; align-items: flex-start;">
+              <div class="step-num" style="background: var(--accent); color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">1</div>
+              <div class="step-text"><strong>Biometric Sync:</strong> Live staff availability is verified via check-ins, eliminating "ghost" slots.</div>
+            </div>
+            <div class="step-item" style="display: flex; gap: 1rem; align-items: flex-start;">
+              <div class="step-num" style="background: var(--accent); color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">2</div>
+              <div class="step-text"><strong>Digital Twin Replica:</strong> Creates a virtual live-map of rooms, equipment, and staff for conflict detection.</div>
+            </div>
+            <div class="step-item" style="display: flex; gap: 1rem; align-items: flex-start;">
+              <div class="step-num" style="background: var(--accent); color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">3</div>
+              <div class="step-text"><strong>Review-Aware Matching:</strong> Pairs patients with therapists based on ratings and seniority.</div>
+            </div>
+            <div class="step-item" style="display: flex; gap: 1rem; align-items: flex-start;">
+              <div class="step-num" style="background: var(--accent); color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">4</div>
+              <div class="step-text"><strong>Protocol Locks:</strong> Automatically enforces time-locked clinical rules (e.g., Morning-only treatments).</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Success Metrics -->
+        <div class="cs-section">
+          <div class="cs-label">Success Metrics</div>
+          <div class="stat-row" style="margin-top: 1rem;">
+            <div class="stat-item">
+              <div class="stat-num">&lt; 10m</div>
+              <div class="stat-label">Scheduling Time</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num">0%</div>
+              <div class="stat-label">Booking Overlaps</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num">+40%</div>
+              <div class="stat-label">Staff Continuity</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num">100%</div>
+              <div class="stat-label">Protocol Compliance</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Core Features -->
+        <div class="cs-section">
+          <div class="cs-label">Core Features</div>
+          <div class="features-list" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 1rem;">
+            <div class="feature-item" style="color: var(--text-muted); font-size: 0.875rem;">👤 <strong>Biometric Presence Sync</strong>: Real-time staff tracking</div>
+            <div class="feature-item" style="color: var(--text-muted); font-size: 0.875rem;">🏥 <strong>Clinical Digital Twin</strong>: Virtual map of assets</div>
+            <div class="feature-item" style="color: var(--text-muted); font-size: 0.875rem;">⭐️ <strong>Review-Aware Engine</strong>: Rating-driven matching</div>
+            <div class="feature-item" style="color: var(--text-muted); font-size: 0.875rem;">⏳ <strong>Protocol Time-Locks</strong>: Treatment time filtering</div>
+          </div>
+        </div>
+
+        <!-- Key Design Decisions & Tradeoffs -->
+        <div class="cs-section">
+          <div class="cs-label">Key Design Decisions & Tradeoffs</div>
+          <div class="cs-text" style="font-size: 0.875rem;">
+            <p style="margin-bottom: 0.8rem;"><strong>System-First vs. Manual-Override:</strong> The engine generates the optimal path, but physicians retain override authority. Prioritizes efficiency while maintaining medical accountability.</p>
+            <p style="margin-bottom: 0.8rem;"><strong>Protocol Rigidity over Spontaneity:</strong> Strict timing locks prevent clinical errors but require high staff punctuality. Safety over flexibility.</p>
+            <p><strong>Hardware Dependency:</strong> System requires biometric hardware for 100% data accuracy, choosing verified presence over manual software input.</p>
+          </div>
+        </div>
+
+        <div class="modal-footer-ctas" style="margin-top: 4rem; display: flex; gap: 1rem; border-top: 1px solid var(--border); padding-top: 2rem;">
+          <a href="https://www.notion.so/Review-Aware-Digital-Twin-Scheduling-System-for-Ayurvedic-Clinical-Workflow-Automation-2f68fab9854d8078ac2aec2bedb6eb7e" target="_blank" class="btn-primary">
+            Check full case study
+            <i data-lucide="arrow-right" style="width:14px;height:14px;"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL 3 -->
+  <div class="modal-overlay case-study-modal" id="case-study-modal-3">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-header-left">
+          <div class="modal-icon">
+            <i data-lucide="shopping-bag" style="width:24px;height:24px;color:var(--accent);"></i>
+          </div>
+          <div>
+            <h2 class="modal-title">AI-Driven UGC Marketplace</h2>
+            <div class="modal-tags">Marketplace · Prototyping · Lovable.dev</div>
+          </div>
+        </div>
+        <button class="modal-close" onclick="closeModal('case-study-modal-3')">
+          <i data-lucide="x" style="width:18px;height:18px;"></i>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <!-- Problem Statement -->
+        <div class="cs-section">
+          <div class="cs-label">Problem Statement</div>
+          <div class="cs-text">
+            Current UGC platforms face a <strong>"discovery gap"</strong> where high-quality content is buried under unstructured listings. Creators lack professional workflows to showcase their work, while brands struggle to find relevant talent efficiently. The friction isn't a lack of data, but a lack of <strong>interpretation and structure.</strong> This project prototypes a solution to bridge that gap by simplifying discovery through AI-assisted categorization.
+          </div>
+        </div>
+
+        <!-- User Personas -->
+        <div class="cs-section">
+          <div class="cs-label">User Personas</div>
+          <div class="persona-grid">
+            <div class="persona-card">
+              <div class="persona-icon">📸</div>
+              <div class="persona-name">Creative Chris</div>
+              <div class="persona-desc">UGC Creator, 24</div>
+              <div class="persona-needs">Structured way to showcase work to brands without technical headaches.</div>
+              <div class="persona-quote">"I have the talent, but I need a professional way to be seen by the right brands."</div>
+            </div>
+            <div class="persona-card">
+              <div class="persona-icon">💼</div>
+              <div class="persona-name">Marketing Maya</div>
+              <div class="persona-desc">Brand Manager, 31</div>
+              <div class="persona-needs">Finding authentic voices efficiently without filtering low-quality listings.</div>
+              <div class="persona-quote">"I spend too much time digging—I just need a curated list of relevant talent."</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Solution & How It Works -->
+        <div class="cs-section">
+          <div class="cs-label">Solution & How It Works</div>
+          <div class="cs-text">
+            A bi-directional marketplace focused on browsing efficiency and smart content structuring.
+          </div>
+          <div class="how-it-works-steps" style="margin-top: 1.5rem; display: flex; flex-direction: column; gap: 1rem;">
+            <div class="step-item" style="display: flex; gap: 1rem; align-items: flex-start;">
+              <div class="step-num" style="background: var(--accent); color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">1</div>
+              <div class="step-text"><strong>Smart Onboarding:</strong> Tailored sign-up flows for creators and brands to define goals and niches.</div>
+            </div>
+            <div class="step-item" style="display: flex; gap: 1rem; align-items: flex-start;">
+              <div class="step-num" style="background: var(--accent); color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">2</div>
+              <div class="step-text"><strong>Structured Upload:</strong> A guided 4-step process for creators to list content with automated quality checks.</div>
+            </div>
+            <div class="step-item" style="display: flex; gap: 1rem; align-items: flex-start;">
+              <div class="step-num" style="background: var(--accent); color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">3</div>
+              <div class="step-text"><strong>Curated Discovery:</strong> Advanced marketplace experience focused on browsing efficiency and smart filtering.</div>
+            </div>
+            <div class="step-item" style="display: flex; gap: 1rem; align-items: flex-start;">
+              <div class="step-num" style="background: var(--accent); color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">4</div>
+              <div class="step-text"><strong>Engagement Loop:</strong> Feedback-driven iteration that refines discovery logic based on real user interactions.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Success Metrics -->
+        <div class="cs-section">
+          <div class="cs-label">Success Metrics</div>
+          <div class="stat-row" style="margin-top: 1rem;">
+            <div class="stat-item">
+              <div class="stat-num">&lt; 3m</div>
+              <div class="stat-label">Time to List</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num">80%</div>
+              <div class="stat-label">Match Rate</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num">-40%</div>
+              <div class="stat-label">Discovery Friction</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num">4.2★</div>
+              <div class="stat-label">User Satisfaction</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Core Features -->
+        <div class="cs-section">
+          <div class="cs-label">Core Features</div>
+          <div class="features-list" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 1rem;">
+            <div class="feature-item" style="color: var(--text-muted); font-size: 0.875rem;">🚀 <strong>Rapid Onboarding</strong>: Quick profile creation</div>
+            <div class="feature-item" style="color: var(--text-muted); font-size: 0.875rem;">📤 <strong>Guided Listing Flow</strong>: Structured content upload</div>
+            <div class="feature-item" style="color: var(--text-muted); font-size: 0.875rem;">🔍 <strong>Intuitive Discovery</strong>: Advanced filtering tools</div>
+            <div class="feature-item" style="color: var(--text-muted); font-size: 0.875rem;">📁 <strong>Smart Categorization</strong>: Automated tagging</div>
+          </div>
+        </div>
+
+        <!-- Key Design Decisions & Tradeoffs -->
+        <div class="cs-section">
+          <div class="cs-label">Key Design Decisions & Tradeoffs</div>
+          <div class="cs-text" style="font-size: 0.875rem;">
+            <p style="margin-bottom: 0.8rem;"><strong>Prototyping over Production:</strong> Chose Lovable.dev for rapid iteration to validate the user journey first, sacrificing deep customization for speed.</p>
+            <p style="margin-bottom: 0.8rem;"><strong>Bi-Directional UX Focus:</strong> Prioritized interconnected flows for both creators and brands, adding design complexity to ensure a balanced ecosystem.</p>
+            <p><strong>AI-Guided UI Exploration:</strong> Used AI suggestions to test multiple approaches quickly, balancing choice-limitation with discovery-breadth.</p>
+          </div>
+        </div>
+
+        <div class="modal-footer-ctas" style="margin-top: 4rem; display: flex; gap: 1rem; border-top: 1px solid var(--border); padding-top: 2rem;">
+          <a href="https://www.notion.so/Ai-driven-UGC-marketplace-platform-prototyping-documentation-2f78fab9854d80b5a542cb3ce79681fd" target="_blank" class="btn-primary">
+            Check full case study
+            <i data-lucide="arrow-right" style="width:14px;height:14px;"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL 4 -->
+  <div class="modal-overlay case-study-modal" id="case-study-modal-4">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-header-left">
+          <div class="modal-icon">
+            <i data-lucide="heart" style="width:24px;height:24px;color:#db2777;"></i>
+          </div>
+          <div>
+            <h2 class="modal-title">Everafter: UX Overhaul</h2>
+            <div class="modal-tags">UX Design · Product Strategy · Conversion Optimization</div>
+          </div>
+        </div>
+        <button class="modal-close" onclick="closeModal('case-study-modal-4')">
+          <i data-lucide="x" style="width:18px;height:18px;"></i>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <!-- Problem Statement -->
+        <div class="cs-section">
+          <div class="cs-label">Problem Statement</div>
+          <div class="cs-text">
+            Wedding planning in India is chaotic, largely offline, and lacks transparency. Couples face significant <strong>"discovery gaps,"</strong> hidden pricing, and a lack of structure, leading to high decision fatigue and drop-off rates during the search process.
+          </div>
+        </div>
+
+        <!-- User Personas -->
+        <div class="cs-section">
+          <div class="cs-label">User Personas</div>
+          <div class="persona-grid">
+            <div class="persona-card">
+              <div class="persona-icon">💍</div>
+              <div class="persona-name">Overwhelmed Couple</div>
+              <div class="persona-needs">Needs price transparency and a structured way to discover and compare vendors.</div>
+              <div class="persona-quote">"Everything is so opaque—I just want to know if they fit my budget."</div>
+            </div>
+            <div class="persona-card">
+              <div class="persona-icon">📅</div>
+              <div class="persona-name">Efficiency Planner</div>
+              <div class="persona-needs">Needs a digital-first platform to compare packages and book on the go.</div>
+              <div class="persona-quote">"I need to manage 10 vendors at once. WhatsApp isn't enough."</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Solution & How It Works -->
+        <div class="cs-section">
+          <div class="cs-label">Solution & How It Works</div>
+          <div class="cs-text">
+            Implemented a <strong>Decision-First</strong> UX through guided discovery and visual storytelling.
+          </div>
+          <div class="how-it-works-steps" style="margin-top: 1.5rem; display: flex; flex-direction: column; gap: 1rem;">
+            <div class="step-item" style="display: flex; gap: 1rem; align-items: flex-start;">
+              <div class="step-num" style="background: #db2777; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">1</div>
+              <div class="step-text"><strong>Guided Discovery:</strong> A "Plan My Wedding" wizard that funnels users to relevant categories.</div>
+            </div>
+            <div class="step-item" style="display: flex; gap: 1rem; align-items: flex-start;">
+              <div class="step-num" style="background: #db2777; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">2</div>
+              <div class="step-text"><strong>Mobile-First Booking:</strong> A streamlined 3-step flow (Select → Customize → Confirm).</div>
+            </div>
+            <div class="step-item" style="display: flex; gap: 1rem; align-items: flex-start;">
+              <div class="step-num" style="background: #db2777; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">3</div>
+              <div class="step-text"><strong>WhatsApp Integration:</strong> Direct handoff for immediate inquiry handling.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Success Metrics -->
+        <div class="cs-section">
+          <div class="cs-label">Success Metrics</div>
+          <div class="stat-row" style="margin-top: 1rem;">
+            <div class="stat-item">
+              <div class="stat-num">&lt; 5m</div>
+              <div class="stat-label">Shortlisting Time</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num">+20%</div>
+              <div class="stat-label">Lead Conversion</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num">-35%</div>
+              <div class="stat-label">Page Drop-off</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num">4.8★</div>
+              <div class="stat-label">User Rating</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Visual Identity / Mockups -->
+        <div class="cs-section">
+          <div class="cs-label">Visual Identity & UX Mockups</div>
+          <div class="mockup-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 1.5rem;">
+            <div class="mockup-item">
+              <img src="assets/image1.png" alt="Wedding Wizard" style="width:100%; border-radius: 8px; border: 1px solid var(--border);">
+              <p style="font-size: 0.75rem; color: var(--text-muted); margin-top: 0.5rem; text-align: center;">Wedding Planning Wizard</p>
+            </div>
+            <div class="mockup-item">
+              <img src="assets/image2.png" alt="Vendor Listings" style="width:100%; border-radius: 8px; border: 1px solid var(--border);">
+              <p style="font-size: 0.75rem; color: var(--text-muted); margin-top: 0.5rem; text-align: center;">Photo-First Listings</p>
+            </div>
+            <div class="mockup-item">
+              <img src="assets/image3.png" alt="Booking Flow" style="width:100%; border-radius: 8px; border: 1px solid var(--border);">
+              <p style="font-size: 0.75rem; color: var(--text-muted); margin-top: 0.5rem; text-align: center;">3-Step Booking Flow</p>
+            </div>
+            <div class="mockup-item">
+              <img src="assets/image4.png" alt="Mobile Dashboard" style="width:100%; border-radius: 8px; border: 1px solid var(--border);">
+              <p style="font-size: 0.75rem; color: var(--text-muted); margin-top: 0.5rem; text-align: center;">Mobile Management Hub</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Core Features -->
+        <div class="cs-section">
+          <div class="cs-label">Core Features</div>
+          <div class="features-list" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 1rem;">
+            <div class="feature-item" style="color: var(--text-muted); font-size: 0.875rem;">✨ <strong>"Plan My Wedding" Wizard</strong>: Smart guidance</div>
+            <div class="feature-item" style="color: var(--text-muted); font-size: 0.875rem;">📸 <strong>Visual Storytelling</strong>: High-fidelity photography</div>
+            <div class="feature-item" style="color: var(--text-muted); font-size: 0.875rem;">🛠️ <strong>Vendor Comparison</strong>: Side-by-side analysis</div>
+            <div class="feature-item" style="color: var(--text-muted); font-size: 0.875rem;">📲 <strong>WhatsApp Sync</strong>: Instant lead handoff</div>
+          </div>
+        </div>
+
+        <!-- Key Design Decisions & Tradeoffs -->
+        <div class="cs-section">
+          <div class="cs-label">Key Design Decisions & Tradeoffs</div>
+          <div class="cs-text" style="font-size: 0.875rem;">
+            <p style="margin-bottom: 0.8rem;"><strong>Visual storytelling over performance:</strong> Prioritized photography-heavy UI to build emotional resonance, accepting the tradeoff of higher initial load times.</p>
+            <p style="margin-bottom: 0.8rem;"><strong>Streamlined MVP Scope:</strong> Focused on 3 core flows (Venue, Vendor, Wizard) to ensure a high-polish launch.</p>
+            <p><strong>Direct Handoff:</strong> Used WhatsApp integration instead of an in-app chat to leverage existing user habits and reduce friction.</p>
+          </div>
+        </div>
+
+        <div class="modal-footer-ctas" style="margin-top: 4rem; display: flex; gap: 1rem; border-top: 1px solid var(--border); padding-top: 2rem;">
+          <a href="https://www.notion.so/Leading-the-UX-Overhaul-of-EVERAFTER-Designing-for-Seamless-Wedding-Planning-Measurable-Conversio-23c8fab9854d80c2b637d2a72fbee9bb" target="_blank" class="btn-primary">
+            Check full case study
+            <i data-lucide="arrow-right" style="width:14px;height:14px;"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 
         <script src="js/script.js"></script>
 
