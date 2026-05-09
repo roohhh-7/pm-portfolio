@@ -699,6 +699,18 @@
 
     .stat-label { font-size: 0.8rem; color: rgba(255,255,255,0.6); font-weight: 300; margin-top: 0.2rem; }
 
+    /* Modal specific stat overrides */
+    .modal-body .stat-num {
+      color: var(--text);
+      font-size: 1.8rem;
+    }
+    .modal-body .stat-label {
+      color: var(--text-muted);
+    }
+    .modal-body .stat-item {
+      border-top: 1px solid var(--border);
+    }
+
     .timeline { margin-top: 1rem; }
     .timeline-item {
       display: flex;
