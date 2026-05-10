@@ -405,13 +405,16 @@
         gap: 1.5rem;
       }
       .card-featured { grid-column: span 1; }
-      .card { padding: 1.5rem; }
+      .card-featured .card-title { font-size: 1.2rem; } /* Same as normal cards */
+      .card-featured .polaroid { height: 200px; } /* Same as normal cards */
+      .card { padding: 1.5rem; min-height: 400px; }
     }
 
     @media (max-width: 600px) {
       nav .nav-links { display: none; }
       .bento-grid { gap: 1.25rem; }
-      .card { padding: 1.25rem; }
+      .card { padding: 1.25rem; min-height: auto; }
+      .polaroid, .card-featured .polaroid { height: 180px; }
     }
 
     /* ── CARD ── */
