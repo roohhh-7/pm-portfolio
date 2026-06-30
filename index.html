@@ -187,6 +187,23 @@
           </div>
         </div>
 
+        <!-- Project 6 Card -->
+        <div class="card reveal" style="transition-delay:0.5s;" data-modal="case-study-modal-6">
+          <div class="polaroid polaroid-bg-3" style="background: linear-gradient(135deg, #ffedd5 0%, #fed7aa 100%);">
+            <img src="assets/image3.png" alt="Swiggy Instamart"
+              style="width:100%; height:100%; object-fit:cover; display:block;" />
+          </div>
+          <div class="card-tags">
+            <span class="tag tag-strat" style="background: rgba(249, 115, 22, 0.1); color: #ea580c;">Product Strategy</span>
+            <span class="tag tag-design" style="background: rgba(234, 179, 8, 0.1); color: #ca8a04;">Behavioral UX</span>
+          </div>
+          <div class="card-title">Swiggy Instamart: The Smarter Checkout</div>
+          <p class="card-desc">Analyzing Swiggy's wallet-topup feature at checkout. A behavioral UX dive into how converting delivery fees to wallet credit reduces cart drop-offs.</p>
+          <div class="card-arrow">
+            <i data-lucide="arrow-right" style="width:14px;height:14px;"></i>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
@@ -1249,6 +1266,114 @@
             target="_blank" class="btn-secondary">
             Check full case study
             <i data-lucide="arrow-right" style="width:14px;height:14px;"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL 6 -->
+  <div class="modal-overlay case-study-modal" id="case-study-modal-6">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-header-left">
+          <div class="modal-icon">
+            <i data-lucide="shopping-cart" style="width:24px;height:24px;color:#ea580c;"></i>
+          </div>
+          <div>
+            <h2 class="modal-title">Swiggy Instamart: The Smarter Checkout Dilemma</h2>
+            <div class="modal-tags">Product Strategy · Behavioral Psychology · E-Commerce UX</div>
+          </div>
+        </div>
+        <button class="modal-close" onclick="closeModal('case-study-modal-6')">
+          <i data-lucide="x" style="width:18px;height:18px;"></i>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <!-- Problem Statement -->
+        <div class="cs-section">
+          <div class="cs-label">Problem Statement</div>
+          <div class="cs-text">
+            <p>Many Instamart carts fall just short of the free-delivery threshold. Users typically respond by scrolling to add cheap junk items or abandoning the cart. For example, one user noted they would: <em>"scroll around trying to find some random pack of chips or close the app."</em> This is poor UX and hurts conversion.</p>
+          </div>
+        </div>
+
+        <!-- Solution & How It Works -->
+        <div class="cs-section">
+          <div class="cs-label">Solution & How It Works</div>
+          <div class="cs-text">
+            <p>Swiggy introduced a clever tweak allowing users to add the exact shortfall to their Swiggy Money wallet at checkout to unlock free delivery. Instead of forcing users to pile on unwanted items, Swiggy lets them pay the gap as wallet credit.</p>
+          </div>
+          <div class="how-it-works-steps" style="margin-top: 1.5rem; display: flex; flex-direction: column; gap: 1rem;">
+            <div class="step-item" style="display: flex; gap: 1rem; align-items: flex-start;">
+              <div class="step-num"
+                style="background: #ea580c; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">
+                1</div>
+              <div class="step-text"><strong>Cart Check:</strong> User is at checkout. System checks if cart ≥ free-delivery threshold.</div>
+            </div>
+            <div class="step-item" style="display: flex; gap: 1rem; align-items: flex-start;">
+              <div class="step-num"
+                style="background: #ea580c; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">
+                2</div>
+              <div class="step-text"><strong>Wallet Prompt:</strong> If below threshold, Swiggy displays the wallet-topup option ("Add ₹X for free delivery").</div>
+            </div>
+            <div class="step-item" style="display: flex; gap: 1rem; align-items: flex-start;">
+              <div class="step-num"
+                style="background: #ea580c; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">
+                3</div>
+              <div class="step-text"><strong>User Choice:</strong> If added, delivery charge is waived and ₹X is added as Swiggy Money for future use. The user feels they've retained value rather than losing it to a fee.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Behavioral Psychology -->
+        <div class="cs-section">
+          <div class="cs-label">Behavioral Psychology Mechanisms</div>
+          <div class="features-list"
+            style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 1rem;">
+            <div class="feature-item" style="color: var(--text-muted); font-size: 0.875rem;">🧠 <strong>Mental Accounting:</strong> Converts a "lost" fee into prepaid groceries.</div>
+            <div class="feature-item" style="color: var(--text-muted); font-size: 0.875rem;">💼 <strong>Endowment Effect:</strong> Unused wallet cash feels like a personal asset.</div>
+            <div class="feature-item" style="color: var(--text-muted); font-size: 0.875rem;">🔒 <strong>Commitment Device:</strong> Preloading creates incentive to return.</div>
+            <div class="feature-item" style="color: var(--text-muted); font-size: 0.875rem;">⚡ <strong>Instant Gratification:</strong> "FREE Delivery at ZERO Cost!" triggers immediate reward.</div>
+          </div>
+        </div>
+
+        <!-- Success Metrics -->
+        <div class="cs-section">
+          <div class="cs-label">Expected Business Impact</div>
+          <div class="stat-row" style="margin-top: 1rem;">
+            <div class="stat-item">
+              <div class="stat-num">+5%</div>
+              <div class="stat-label">Cart Conversion</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num">+5%</div>
+              <div class="stat-label">Repeat Purchase</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num">~20%</div>
+              <div class="stat-label">Unused Credit Profit</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Key Design Decisions & Tradeoffs -->
+        <div class="cs-section">
+          <div class="cs-label">Key Risks & Mitigations</div>
+          <div class="cs-text" style="font-size: 0.875rem;">
+            <p style="margin-bottom: 0.8rem;"><strong>Unit-Economics Hit on Small Orders:</strong> Free delivery is costly on low-basket orders. Swiggy bears full delivery cost on unprofitable orders if not balanced. Mitigation: Limit to very small gaps (e.g. <₹50) or require a minimum cart value.</p>
+            <p style="margin-bottom: 0.8rem;"><strong>Customer Trust:</strong> Users might wonder if Swiggy is forcing them into a wallet or concerned about hidden tricks. Mitigation: Clear messaging ("Redeem fully on your next order").</p>
+            <p><strong>Low Usage of Credit:</strong> If users forget their credit, they may feel their money is "locked." Mitigation: App reminders to spend balance or allow refund of small balances.</p>
+          </div>
+        </div>
+
+        <div class="modal-footer-ctas"
+          style="margin-top: 4rem; display: flex; gap: 1rem; border-top: 1px solid var(--border); padding-top: 2rem;">
+          <a href="https://app.notion.com/p/Swiggy-Instamart-The-Smarter-Checkout-Dilemma-36e8fab9854d80739a75c188120b3f1a"
+            target="_blank" class="btn-primary">
+            Check full case study
+            <i data-lucide="external-link" style="width:14px;height:14px;"></i>
           </a>
         </div>
       </div>
