@@ -204,6 +204,23 @@
           </div>
         </div>
 
+        <!-- Project 7 Card -->
+        <div class="card reveal" style="transition-delay:0.6s;" data-modal="case-study-modal-7">
+          <div class="polaroid polaroid-bg-1" style="background: linear-gradient(135deg, #f3e8ff 0%, #e9d5ff 100%);">
+            <img src="assets/image4.png" alt="Veil Video Editor"
+              style="width:100%; height:100%; object-fit:cover; display:block;" />
+          </div>
+          <div class="card-tags">
+            <span class="tag tag-ai" style="background: rgba(168, 85, 247, 0.1); color: #9333ea;">On-Device ML</span>
+            <span class="tag tag-strat" style="background: rgba(236, 72, 153, 0.1); color: #db2777;">Privacy</span>
+          </div>
+          <div class="card-title">Veil: Privacy-First Video Editor</div>
+          <p class="card-desc">Redefining video redaction from a 'professional editing task' to a single-tap privacy action using local Machine Learning.</p>
+          <div class="card-arrow">
+            <i data-lucide="arrow-right" style="width:14px;height:14px;"></i>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
@@ -1371,6 +1388,122 @@
         <div class="modal-footer-ctas"
           style="margin-top: 4rem; display: flex; gap: 1rem; border-top: 1px solid var(--border); padding-top: 2rem;">
           <a href="https://app.notion.com/p/Swiggy-Instamart-The-Smarter-Checkout-Dilemma-36e8fab9854d80739a75c188120b3f1a"
+            target="_blank" class="btn-primary">
+            Check full case study
+            <i data-lucide="external-link" style="width:14px;height:14px;"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL 7 -->
+  <div class="modal-overlay case-study-modal" id="case-study-modal-7">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-header-left">
+          <div class="modal-icon">
+            <i data-lucide="eye-off" style="width:24px;height:24px;color:#9333ea;"></i>
+          </div>
+          <div>
+            <h2 class="modal-title">Veil: The Privacy-First Video Editor</h2>
+            <div class="modal-tags">On-Device ML · Video Redaction · UX Design</div>
+          </div>
+        </div>
+        <button class="modal-close" onclick="closeModal('case-study-modal-7')">
+          <i data-lucide="x" style="width:18px;height:18px;"></i>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <!-- Problem Statement -->
+        <div class="cs-section">
+          <div class="cs-label">Problem Statement</div>
+          <div class="cs-text">
+            <p>In an era of ubiquitous video sharing, protecting privacy remains a high-friction, deeply technical task. While 74% of users express concern about digital privacy, the majority still share unredacted videos because existing mobile video editors make redaction a <strong>manual, frame-by-frame ordeal</strong>.</p>
+            <p>Tools that offer automated tracking require users to <strong>upload their raw footage to a cloud server</strong>, presenting an unacceptable security risk.</p>
+          </div>
+        </div>
+
+        <!-- User Personas -->
+        <div class="cs-section">
+          <div class="cs-label">User Personas</div>
+          <div class="persona-grid">
+            <div class="persona-card">
+              <div class="persona-icon">📹</div>
+              <div class="persona-name">Sarah, Independent Journalist</div>
+              <div class="persona-needs">Needs to protect sources immediately before uploading footage.</div>
+              <div class="persona-quote">"I can't risk uploading raw footage to a cloud just to blur a face."</div>
+            </div>
+            <div class="persona-card">
+              <div class="persona-icon">👨‍👧</div>
+              <div class="persona-name">David, Careful Parent</div>
+              <div class="persona-needs">Wants to blur out school logos or background children before sharing.</div>
+              <div class="persona-quote">"Editing on my phone is too hard, I just end up not sharing the video."</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Solution & How It Works -->
+        <div class="cs-section">
+          <div class="cs-label">Solution & How It Works</div>
+          <div class="cs-text">
+            <p><strong>Veil</strong> reframes video redaction from a 'professional editing task' to a <strong>single-tap privacy action</strong>. By leveraging on-device Machine Learning (ML Kit) for automated tracking, Veil allows users to identify and mask sensitive information locally, reducing 'Time-to-Redact' from hours to seconds with zero cloud dependency.</p>
+          </div>
+          <div class="how-it-works-steps" style="margin-top: 1.5rem; display: flex; flex-direction: column; gap: 1rem;">
+            <div class="step-item" style="display: flex; gap: 1rem; align-items: flex-start;">
+              <div class="step-num"
+                style="background: #9333ea; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">
+                1</div>
+              <div class="step-text"><strong>Scan Privacy:</strong> On-device ML scans the video in seconds, extracting faces and objects.</div>
+            </div>
+            <div class="step-item" style="display: flex; gap: 1rem; align-items: flex-start;">
+              <div class="step-num"
+                style="background: #9333ea; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">
+                2</div>
+              <div class="step-text"><strong>Decision:</strong> Presents a clean list of detected faces & text ("Inbox" model).</div>
+            </div>
+            <div class="step-item" style="display: flex; gap: 1rem; align-items: flex-start;">
+              <div class="step-num"
+                style="background: #9333ea; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">
+                3</div>
+              <div class="step-text"><strong>One-Tap Blur:</strong> One tap applies a dynamic mosaic tracking the face across frames.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Success Metrics -->
+        <div class="cs-section">
+          <div class="cs-label">Success Metrics</div>
+          <div class="stat-row" style="margin-top: 1rem;">
+            <div class="stat-item">
+              <div class="stat-num">&lt;60s</div>
+              <div class="stat-label">Time-to-Redact (TTR)</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num">High</div>
+              <div class="stat-label">Export Completion</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num">Low</div>
+              <div class="stat-label">Timeline Scrubbing</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Key Design Decisions & Tradeoffs -->
+        <div class="cs-section">
+          <div class="cs-label">Product Retrospective & Key Learnings</div>
+          <div class="cs-text" style="font-size: 0.875rem;">
+            <p style="margin-bottom: 0.8rem;"><strong>The "Black Box" Trust Issue:</strong> Initially, the app just applied blurs automatically, which users hated due to lack of control. <em>Solution:</em> Shifted to an "Inbox" model where the app lists "Tracked Items" for the user to explicitly tap 'Apply Blur'.</p>
+            <p style="margin-bottom: 0.8rem;"><strong>UI Simplicity vs. Power User Needs:</strong> Power users wanted keyframes; casual users were overwhelmed. <em>Solution:</em> Abstracted complexity. Tapping an item snaps the timeline to it, prioritizing status buttons (Blur, Emoji) over sliders.</p>
+            <p><strong>The Cost of Local Processing:</strong> Running ML and FFmpeg on-device is heavy. <em>Takeaway:</em> Aggressively optimized frame extraction using low-res proxies for ML, keeping final export native. Speed of UI took priority over real-time playback res.</p>
+          </div>
+        </div>
+
+        <div class="modal-footer-ctas"
+          style="margin-top: 4rem; display: flex; gap: 1rem; border-top: 1px solid var(--border); padding-top: 2rem;">
+          <a href="https://app.notion.com/p/Veil-The-Privacy-First-Video-Editor-38f8fab9854d80f18c67c9c526e7d8ef"
             target="_blank" class="btn-primary">
             Check full case study
             <i data-lucide="external-link" style="width:14px;height:14px;"></i>
