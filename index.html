@@ -93,8 +93,25 @@
 
       <div class="bento-grid">
 
+        <!-- Project 8 (Aegis) Card -->
+        <div class="card reveal" data-modal="case-study-modal-8">
+          <div class="polaroid polaroid-bg-2" style="background: linear-gradient(135deg, #dcfce7 0%, #bbf7d0 100%);">
+            <img src="assets/aegis-cover.jpg" alt="Aegis Fraud Prevention"
+              style="width:100%; height:100%; object-fit:cover; display:block;" />
+          </div>
+          <div class="card-tags">
+            <span class="tag tag-strat" style="background: rgba(34, 197, 94, 0.1); color: #16a34a;">FinTech</span>
+            <span class="tag tag-ai" style="background: rgba(59, 130, 246, 0.1); color: #2563eb;">Workflow Builder</span>
+          </div>
+          <div class="card-title">Aegis: Fraud Prevention</div>
+          <p class="card-desc">A no-code visual workflow builder empowering risk teams to design, simulate, and deploy complex fraud rules instantly.</p>
+          <div class="card-arrow">
+            <i data-lucide="arrow-right" style="width:14px;height:14px;"></i>
+          </div>
+        </div>
+
         <!-- Project 7 (Veil) Card -->
-        <div class="card reveal" data-modal="case-study-modal-7">
+        <div class="card reveal" style="transition-delay:0.1s;" data-modal="case-study-modal-7">
           <div class="polaroid polaroid-bg-1" style="background: linear-gradient(135deg, #f3e8ff 0%, #e9d5ff 100%);">
             <img src="assets/veil.jpg" alt="Veil Video Editor"
               style="width:100%; height:100%; object-fit:cover; display:block;" />
@@ -111,7 +128,7 @@
         </div>
 
         <!-- Project 5 (Meetpilot) Card -->
-        <div class="card reveal" style="transition-delay:0.1s;" data-modal="case-study-modal-5">
+        <div class="card reveal" style="transition-delay:0.2s;" data-modal="case-study-modal-5">
           <div class="polaroid polaroid-bg-2" style="background: linear-gradient(135deg, #e0f2fe 0%, #bae6fd 100%);">
             <img src="assets/meetpilot.jpg" alt="Meetpilot"
               style="width:100%; height:100%; object-fit:cover; display:block;" />
@@ -128,7 +145,7 @@
         </div>
 
         <!-- Featured (KitchenMate) Card -->
-        <div class="card reveal" style="transition-delay:0.2s;" data-modal="case-study-modal-1">
+        <div class="card reveal" style="transition-delay:0.3s;" data-modal="case-study-modal-1">
           <div class="polaroid polaroid-bg-1">
             <img src="assets/project1.png" alt="KitchenMate"
               style="width:100%; height:100%; object-fit:cover; display:block;" />
@@ -146,7 +163,7 @@
         </div>
 
         <!-- Project 2 (Ayurvedic) Card -->
-        <div class="card reveal" style="transition-delay:0.3s;" data-modal="case-study-modal-2">
+        <div class="card reveal" style="transition-delay:0.4s;" data-modal="case-study-modal-2">
           <div class="polaroid polaroid-bg-2">
             <img src="assets/project2.png" alt="Ayurvedic Scheduler"
               style="width:100%; height:100%; object-fit:cover; display:block;" />
@@ -165,7 +182,7 @@
         </div>
 
         <!-- Project 6 (Swiggy) Card -->
-        <div class="card reveal" style="transition-delay:0.4s;" data-modal="case-study-modal-6">
+        <div class="card reveal" style="transition-delay:0.5s;" data-modal="case-study-modal-6">
           <div class="polaroid polaroid-bg-3" style="background: linear-gradient(135deg, #ffedd5 0%, #fed7aa 100%);">
             <img src="assets/swiggy.png" alt="Swiggy Instamart"
               style="width:100%; height:100%; object-fit:cover; display:block;" />
@@ -182,7 +199,7 @@
         </div>
 
         <!-- Project 4 (Everafter) Card -->
-        <div class="card reveal" style="transition-delay:0.5s;" data-modal="case-study-modal-4">
+        <div class="card reveal" style="transition-delay:0.6s;" data-modal="case-study-modal-4">
           <div class="polaroid polaroid-bg-1" style="background: linear-gradient(135deg, #fce7f3 0%, #fbcfe8 100%);">
             <img src="assets/image1.png" alt="Everafter Wedding Planning"
               style="width:100%; height:100%; object-fit:cover; display:block;" />
@@ -1357,6 +1374,160 @@
   </div>
 
   <script src="js/script.js"></script>
+
+  <!-- MODAL 8 (Aegis) -->
+  <div class="modal-overlay case-study-modal" id="case-study-modal-8">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-header-left">
+          <div class="modal-icon">
+            <i data-lucide="shield" style="width:24px;height:24px;color:#16a34a;"></i>
+          </div>
+          <div>
+            <h2 class="modal-title">Aegis: Visual Workflow Builder</h2>
+            <div class="modal-tags">FinTech · Risk Management · Workflow Builder</div>
+          </div>
+        </div>
+        <button class="modal-close" onclick="closeModal('case-study-modal-8')">
+          <i data-lucide="x" style="width:18px;height:18px;"></i>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <!-- Problem Statement -->
+        <div class="cs-section">
+          <div class="cs-label">The Problem Space</div>
+          <div class="cs-text">
+            <p>In the modern FinTech and e-commerce landscape, fraud patterns evolve rapidly while internal risk teams are often stuck using legacy, code-heavy systems.</p>
+            <p>Through continuous discovery, we identified three critical bottlenecks:</p>
+            <ul style="margin-top:0.8rem; padding-left:1.2rem; color:var(--text-muted); font-size:0.875rem; display:flex; flex-direction:column; gap:0.5rem;">
+              <li><strong>The Engineering Chokepoint:</strong> Implementing a new rule requires engineering tickets, sprint prioritization, and deploying code, costing millions in realized fraud.</li>
+              <li><strong>The "Black Box" Problem:</strong> Legacy rule engines rely on complex nested logic that is difficult to visualize or audit.</li>
+              <li><strong>The Cost of False Positives:</strong> Deploying rules without robust testing blocks legitimate customers. A 1% increase in false positives can devastate revenue.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- User Personas -->
+        <div class="cs-section">
+          <div class="cs-label">Target Audience & Jobs-to-be-Done</div>
+          <div class="persona-grid">
+            <div class="persona-card">
+              <div class="persona-icon">🛡️</div>
+              <div class="persona-name">Alex, Fraud Strategy Manager</div>
+              <div class="persona-needs">Needs to react to fraud attacks immediately without waiting for engineering.</div>
+              <div class="persona-quote">"I need to adjust velocity checks instantly to stop a sudden attack."</div>
+            </div>
+            <div class="persona-card">
+              <div class="persona-icon">📊</div>
+              <div class="persona-name">Sam, Risk Analyst</div>
+              <div class="persona-needs">Needs to backtest theories against real-world data at scale.</div>
+              <div class="persona-quote">"I must prove this new rule won't block our best customers before it goes live."</div>
+            </div>
+            <div class="persona-card">
+              <div class="persona-icon">💻</div>
+              <div class="persona-name">Jordan, Software Engineer</div>
+              <div class="persona-needs">Wants to stop updating basic threshold values and focus on core architecture.</div>
+              <div class="persona-quote">"Risk configuration changes take up 30% of my week."</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Solution -->
+        <div class="cs-section">
+          <div class="cs-label">The Solution & Vision</div>
+          <div class="cs-text">
+            <p>The vision for Aegis was to create the <strong>"Figma for Fraud Prevention."</strong> An interactive workspace that shifts power back to domain experts while ensuring engineering safety.</p>
+          </div>
+          <div class="how-it-works-steps" style="margin-top: 1.5rem; display: flex; flex-direction: column; gap: 1rem;">
+            <div class="step-item" style="display: flex; gap: 1rem; align-items: flex-start;">
+              <div class="step-num" style="background: #16a34a; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">1</div>
+              <div class="step-text"><strong>Build Visually:</strong> A node-based canvas (React Flow) to construct complex logic with zero cognitive overhead.</div>
+            </div>
+            <div class="step-item" style="display: flex; gap: 1rem; align-items: flex-start;">
+              <div class="step-num" style="background: #16a34a; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">2</div>
+              <div class="step-text"><strong>Test Instantly:</strong> High-performance simulation backend to run workflows against massive historical datasets.</div>
+            </div>
+            <div class="step-item" style="display: flex; gap: 1rem; align-items: flex-start;">
+              <div class="step-num" style="background: #16a34a; color: white; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0;">3</div>
+              <div class="step-text"><strong>Analyze Deeply:</strong> An analytics suite providing immediate feedback (e.g., Revenue Protected, Approval Rate).</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- MVP UI Mockups Placeholder -->
+        <div class="cs-section">
+          <div class="cs-label">MVP Design & Workflow</div>
+          <div class="mockup-grid" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; margin-top: 1.5rem;">
+            <div class="mockup-item">
+              <img src="assets/aegis-mockup1.png" alt="Aegis Canvas" style="width:100%; border-radius: 8px; border: 1px solid var(--border);">
+            </div>
+            <div class="mockup-item">
+              <img src="assets/aegis-mockup2.png" alt="Aegis Rules" style="width:100%; border-radius: 8px; border: 1px solid var(--border);">
+            </div>
+            <div class="mockup-item">
+              <img src="assets/aegis-mockup3.png" alt="Aegis Simulation" style="width:100%; border-radius: 8px; border: 1px solid var(--border);">
+            </div>
+            <div class="mockup-item">
+              <img src="assets/aegis-mockup4.png" alt="Aegis Analytics" style="width:100%; border-radius: 8px; border: 1px solid var(--border);">
+            </div>
+            <div class="mockup-item">
+              <img src="assets/aegis-mockup5.png" alt="Aegis Logs" style="width:100%; border-radius: 8px; border: 1px solid var(--border);">
+            </div>
+          </div>
+        </div>
+
+        <!-- Success Metrics -->
+        <div class="cs-section">
+          <div class="cs-label">Success Metrics</div>
+          <div class="stat-row" style="margin-top: 1rem;">
+            <div class="stat-item">
+              <div class="stat-num">-95%</div>
+              <div class="stat-label">Time-to-Deploy</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num">15h</div>
+              <div class="stat-label">Eng Hours Saved/wk</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num">50+</div>
+              <div class="stat-label">Simulations/User/wk</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num">-12%</div>
+              <div class="stat-label">False Positives</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Challenges & Trade-offs -->
+        <div class="cs-section">
+          <div class="cs-label">Challenges & Trade-offs</div>
+          <div class="cs-text" style="font-size: 0.875rem;">
+            <p style="margin-bottom: 0.8rem;"><strong>Information Density vs. Usability:</strong> Complex nodes threatened to clutter the canvas. <em>Solution:</em> Implemented collapsible sidebars, robust search, and a minimalist node design to keep the workspace focused.</p>
+            <p style="margin-bottom: 0.8rem;"><strong>Performance at Scale:</strong> Simulating thousands of transactions in the browser caused UI lag. <em>Solution:</em> Decoupled UI from simulation logic, building a lightweight Python backend to handle heavy computation asynchronously.</p>
+          </div>
+        </div>
+
+        <!-- Future Roadmap -->
+        <div class="cs-section">
+          <div class="cs-label">Future Roadmap (V2)</div>
+          <ul style="margin-top:0.8rem; padding-left:1.2rem; color:var(--text-muted); font-size:0.875rem; display:flex; flex-direction:column; gap:0.5rem;">
+            <li><strong>Live Shadow Mode:</strong> Testing rules against real-time Kafka feeds without affecting actual customer outcomes.</li>
+            <li><strong>Generative AI Integration:</strong> Auto-generating node graphs using LLMs (e.g., "Create a rule to block >$500 from high-risk countries").</li>
+            <li><strong>Enterprise Collaboration:</strong> Multi-player mode for commenting, version history, and deployment approvals.</li>
+          </ul>
+        </div>
+
+        <div class="modal-footer-ctas" style="margin-top: 4rem; display: flex; gap: 1rem; border-top: 1px solid var(--border); padding-top: 2rem;">
+          <a href="https://app.notion.com/p/AEGIS-0-1-FinTech-Product-3908fab9854d80c6a3d7dfb6c9c97506" target="_blank" class="btn-primary">
+            Check full case study
+            <i data-lucide="external-link" style="width:14px;height:14px;"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 
 </body>
 
