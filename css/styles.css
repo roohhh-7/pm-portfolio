@@ -927,6 +927,11 @@
       pointer-events: none;
       transition: opacity 0.4s ease;
       overflow-y: auto;
+      scrollbar-width: none;
+    }
+    
+    .modal-overlay::-webkit-scrollbar {
+      display: none;
     }
 
     .modal-overlay.active {
